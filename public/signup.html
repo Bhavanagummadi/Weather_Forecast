@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="/registerPage" method="POST">
+            <h1>Registration Form</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" name="Fname" required>
+                <ion-icon name="person"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" name="Email" required>
+                <ion-icon name="mail"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" name="Password" required>
+                <ion-icon name="lock-closed"></ion-icon>
+            </div>
+           
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

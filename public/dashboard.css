@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background:url("Images/main.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+    position: relative;
+    
+}
+.card {
+    background-color: #000000d0; 
+    color: #000; 
+    padding: 2em;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border-radius:50%;
+    border:none;
+    height:46px;
+    width:46px;
+    outline:none;
+    background:#7c7c7c3b;
+    color:#D67BFF; 
+    margin-left:5px;
+    cursor:pointer;
+    transition:0.2s ease-in-out;
+}
+button:hover{
+    background-color: #7c7c7c7b;
+}
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background-color: #7c7c7c2b;
+    color: rgba(240,253,255,0.5); 
+    font-family: inherit;
+    font-size: 120%;
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+.description {
+    text-transform: capitalize;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after {
+    visibility: visible;
+    content: "Search a City";
+    color: rgba(240,253,255,0.5);
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+.header-title {
+    font-family: 'Nova Mono', monospace;
+    word-spacing: 10px;
+    letter-spacing: 8px;
+    
+    font-size: 30px;
+    margin: 0;
+    padding-top: 20px;
+    font-weight: bold;
+    position: absolute;
+    top:0%;
+    width: 100%;
+    height:60px;
+    text-align: center;
+    background-color:#BC7AF9a0; 
+    color: rgba(240,253,255);
+}
